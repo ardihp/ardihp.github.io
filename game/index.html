@@ -1,10 +1,104 @@
 <html>
     <head>
+        <meta charset="utf-8" />
         <title>
-            Game
+            BREAK OUT GAME
         </title>
+        <style>
+        * { padding: 10; margin: 10; }
+        canvas { background: #eee; display: block;
+        margin: 0 auto; }
+        </style>
     </head>
-<body>
-    Ini contoh untuk halaman game, masih dalam pengembangan.
-</body>
+    <body>
+        <canvas id="myCanvas" width="480" height="320"></canvas>
+
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            var ballRadius = 10;
+
+            var x = c.width/2;
+            var y = c.height-30;
+
+            var dx = 2;
+            var dy = -2;
+
+            var paddleHeight = 10;
+            var paddleWidth = 75;
+            var paddleX = (c.width-paddleWidth)/2;
+
+            var rightPressed = false;
+            var leftPressed = false;
+
+            document.addEventListener("keydown", keyDownHandler, false);
+            document.addEventListener("keyup", keyUpHandler, false);
+
+            function keyDownHandler(e){
+                if(e.key == "right" || e.key == "ArrowRight"){
+                    rightPressed = true;
+                }
+                else if(e.key == "left" || e.key == "ArrowLeft"){
+                    leftPressed = true;
+                }
+            }
+
+            function keyUpHandler(e){
+                if(e.key == "right" || e.key == "ArrowRight"){
+                    rightPressed = false;
+                }
+                else if(e.key == "left" || e.key == "ArrowLeft"){
+                    leftPressed = false;
+                }
+            }
+
+            function drawPaddle(){
+                ctx.beginPath();
+                ctx.rect(paddleX, c.height-paddleHeight, paddleWidth, paddleHeight);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            function drawBall(){
+                ctx.beginPath();
+                ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+                ctx.fillStyle = "#0095DD";
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            function draw(){
+                ctx.clearRect(0,0, c.width, c.height);
+                drawBall();
+                drawPaddle();
+                if(x + dx > c.width-ballRadius || x + dx < ballRadius){
+                    dx = -dx;
+                }
+                if(y + dy < ballRadius){
+                    dy = -dy;
+                } else if(y + dy > c.height-ballRadius){
+                    if(x > paddleX && x < paddleX + paddleWidth){
+                        dy = -dy;
+                    }
+                    else{
+                        alert("GAME OVER");
+                        document.location.reload();
+                        clearInterval(interval);
+                    }
+                }
+                if(rightPressed && paddleX < c.width-paddleWidth){
+                    paddleX += 7;
+                }
+                else if(leftPressed && paddleX > 0){
+                    paddleX -= 7;
+                }
+                x += dx;
+                y += dy;
+            }
+
+            var interval = setInterval(draw,10);
+        </script>
+    </body>
 </html>
