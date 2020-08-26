@@ -45,7 +45,7 @@
 
             document.addEventListener("keydown", keyDownHandler, false);
             document.addEventListener("keyup", keyUpHandler, false);
-            document.addEventListener("mousemove", mousemMoveHandler, false);
+            document.addEventListener("mousemove", mouseMoveHandler, false);
 
             function keyDownHandler(e) {
                 if (e.key == "Right" || e.key == "ArrowRight") {
@@ -65,7 +65,7 @@
                 }
             }
 
-            function mousemMoveHandler(e){
+            function mouseMoveHandler(e){
                 var relativeX = e.clientX - canvas.offsetLeft;
                 if(relativeX > 0 && relativeX < canvas.width){
                     paddlex = relativeX - paddleWidth/2;
@@ -81,7 +81,7 @@
                                 dy = -dy;
                                 b.status = 0;
                                 score++;
-                                if(score == brickColumnCount*brickRowCount) {
+                                if(score == brickRowCount*brickColumnCount) {
                                     alert("You Win, Congratulations!");
                                     document.location.reload();
                                     clearInterval(interval);
@@ -125,7 +125,7 @@
             function drawScore() {
                 ctx.font = "16px Arial";
                 ctx.fillStyle = "#0095DD";
-                ctx.fillText("Score : " +score, 8, 20);
+                ctx.fillText("Score: "+score, 8, 20);
             }
 
             function draw() {
