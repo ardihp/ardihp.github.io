@@ -91,43 +91,77 @@
   #home{
       height: 100vh;
       min-height: 500px;
-      background: url(../images/1061866-puppy-wallpaper-for-computer-1920x1200-1080p.jpg) no-repeat center;
+      background: url(../images/background.png) center;
       background-size: cover;
       background-attachment: fixed;
+      animation: hero 15s infinite;
   }
   
-  #home .inner-width{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      text-align: center;
+  @keyframes hero{
+      0%{
+          background-position-x: -10px;
+          background-position-y: 0;
+      }
+      25%{
+          background-position-x: -15px;
+          background-position-y: -8px;
+      }
+      50%{
+          background-position-x: 20px;
+          background-position-y: -14px;
+      }
+      75%{
+          background-position-x: -15px;
+          background-position-y: -8px;
+      }
+      100%{
+          background-position-x: -10px;
+          background-position-y: 0;
+      }
   }
   
-  #home .content{
-      width: 100%;
-      color: #fff;
+  .content{
+      color: white;
+      position: absolute;
+      top: 40%;
+      left: 8%;
+      z-index: 2;
+      font-family: sans-serif;
   }
   
-  #home .content h1{
-      font-size: 60px;
-      margin-bottom: 60px;
+  .content button{
+      margin: 0px 15px auto 0;
   }
   
-  #home .content h1::after{
-      content: "Hi I'm Ardi";
+  .content h1{
+      font-size: 80px;
+      margin: 0px 0 30px;
+      line-height: 80px;
+  }
+  
+  .content h1::after{
+      content: "Biographical Website";
       animation: textanim 10s linear infinite;
   }
   
+  
   @keyframes textanim{
-      25%{
-          content: "I'm A Student";
+      16.7%{
+          opacity: 0;
+      }
+      33.3%{
+          opacity: 1;
+          content: "Coolest Website";
       }
       50%{
-          content: "I Like To Do Programming";
+          opacity: 0;
       }
-      75%{
-          content: "Welcome To My Web :)";
+      66.6%{
+          opacity: 1;
+          content: "Animated Website";
+      }
+      83.4%{
+          opacity: 0;
       }
   }
   
@@ -142,28 +176,24 @@
       color: #48dbfb;
   }
   
-  #home .buttons{
-      margin-top: 60px;
+  #home button{
+      cursor: pointer;
+      color: aqua;
+      padding: 10px 25px;
+      background: transparent;
+      border: 1px solid aqua;
+      border-radius: 60px;
+      
   }
   
-  #home .buttons a{
-      display: inline-block;
-      margin: 15px 30px;
-      color: #48dbfb;
-      font-size: 15px;
-      font-weight: 500;
-      width: 180px;
-      border: 1px solid;
-      padding: 14px 0;
-      border-radius: 6px;
-      transition: .2s linear;
-  }
-  
-  #home .buttons a:hover,
-  #home .buttons a:nth-child(2)
+  #home button:hover
   {
-      background-color: #48dbfb;
-      color: #fff;
+      color: white;
+      padding: 10px 25px;
+      background: #48dbfb;
+      border: 1px solid #fff;
+      border-radius: 20px;
+      transition: .2s linear;
   }
   
   section{
@@ -567,4 +597,63 @@
       .work{
           width: 100%;
       }
+  }
+  
+  .bubbles img{
+      width: 50px;
+      animation: bubble 7s backwards infinite;
+  }
+  
+  .bubbles{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      bottom: -70px;
+  }
+  
+  @keyframes bubble{
+      0%{
+          transform: translateY(0);
+          opacity: 0;
+      }
+      50%{
+          opacity: 1;
+      }
+      57%{
+          opacity: 1;
+      }
+      100%{
+          transform: translateY(-80vh);
+          opacity: 0;
+      }
+  }
+  
+  .bubbles img:nth-child(1){
+      animation-delay: 2s;
+      width: 25px;
+  }
+  .bubbles img:nth-child(2){
+      animation-delay: 1s;
+      width: 55px;
+  }
+  .bubbles img:nth-child(3){
+      animation-delay: 3s;
+      width: 35px;
+  }
+  .bubbles img:nth-child(4){
+      animation-delay: 4.5s;
+  }
+  .bubbles img:nth-child(5){
+      animation-delay: 3.5s;
+      width: 35;
+  }
+  .bubbles img:nth-child(6){
+      animation-delay: 2.5s;
+      width: 55px;
+  }
+  .bubbles img:nth-child(7){
+      animation-delay: 5s;
+      width: 25px;
   }
