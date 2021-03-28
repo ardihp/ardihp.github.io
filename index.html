@@ -1,304 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Personal Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="inner-width">
-            <a href="" class="logo"></a>
-            <button class="menu-toggler">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="navbar-menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#education">Education</a>
-                <a href="#works">Works</a>
-                <a href="game/index.html">Game 1</a>
-                <a href="Game Tikus/index.html">Game 2</a>
-            </div>
-        </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+
+    <title>Portofolio | Ardiansyah</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Ardi</div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Home -->
-    <section id="home">
-            <div class="content">
-                <small>Welcome To my</small>
-                <h1></h1>
-                
-                <button type="button">Contact Me</button>
-                <button type="button">Download CV</button>
-            </div>
-            <div class="bubbles">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-                <img src="images/bubble.png">
-            </div>
+    <section id="home" class="screen">
+      <div id="scene">
+        <div data-depth="0.1" class="bg">
+          <img src="asset/planets-website-images/background.png" alt="" />
+        </div>
+        <div data-depth="0.2" class="rock1">
+          <img src="asset/planets-website-images/rock.png" alt="" />
+        </div>
+        <div data-depth="1.2" class="earth">
+          <img src="asset/planets-website-images/earth.png" alt="" />
+        </div>
+        <div data-depth="0.1" class="text">
+          <h1>Ardiansyah</h1>
+          <p>Junior Front-End Developer | Student</p>
+        </div>
+        <div data-depth="0.4" class="mid">
+          <img src="asset/planets-website-images/mid.png" alt="" />
+        </div>
+        <div data-depth="0.1" class="fore">
+          <img src="asset/planets-website-images/foreground.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <!-- About -->
-    <section id="about">
-        <div class="inner-width">
-            <h1 class="section-title">About</h1>
-            <div class="about-content">
-                <img src="images/pic.png" alt="" class="about-pic">
-                <div class="about-text">
-                    <h2>Hi! I'm Ardi</h2>
-                    <h3>
-                        <span>Student</span>
-                        <span>Web Development</span>
-                        <span>Designer</span>
-                    </h3>
-                    <p>
-                        Hallo nama saya Ardiansyah Halim Putra, lahir di Jakarta pada 11 September 2003. Sekarang saya bersekolah
-                        di SMK Cinta Kasih Tzu Chi dengan jurusan Rekayasa Perangkat Lunak ( Software Engineering ), hobi saya bermain
-                        basket, berenang dan juga makan. Diwaktu luang biasanya saya melakukan coding iseng-iseng dengan menggunakan 
-                        framework laravel.
-                    </p>
-                </div>
-            </div>
-
-            <div class="skills">
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>HTML</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar html"></div></html>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>CSS</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar css"></div></html>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Javascript</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill-bar js"></div></html>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>PHP</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar php"></div></html>
-                </div>
-                
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>SQL</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar sql"></div></html>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>C++</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar c"></div></html>
-                </div>
-            </div>
+    <section id="about" class="screen">
+      <div class="about-container">
+        <div class="main">
+          <h1>About Me!</h1>
+          <p>
+            Hi! I'm Ardiansyah Halim Putra, Junior Front-End Developer. I'm
+            Student From SMK Cinta Kasih Tzu Chi, I Like To Do Programming.
+          </p>
+          <h1 class="skill">My Skills</h1>
         </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slider 1 -->
+          <div class="swiper-slide">
+            <div class="slide-number">
+              <p><span>HTML</span></p>
+            </div>
+            <div class="slide-text">
+              <h4><span>01</span></h4>
+            </div>
+            <div class="slide-detail">
+              <p>
+                <span>
+                  Saya cukup mahir dalam menggunakan bahasa pemrograman HTML.
+                </span>
+              </p>
+            </div>
+            <div class="slide-detail-facts">
+              <div>
+                <h5>Rate : <span style="opacity: 0.8">8 / 10</span></h5>
+              </div>
+            </div>
+            <div class="slide-img"></div>
+          </div>
+
+          <!-- Slider 2 -->
+          <div class="swiper-slide">
+            <div class="slide-number">
+              <p><span>CSS</span></p>
+            </div>
+            <div class="slide-text">
+              <h4><span>02</span></h4>
+            </div>
+            <div class="slide-detail">
+              <p>
+                <span>
+                  Saya cukup mahir dalam menggunakan bahasa pemrograman CSS.
+                </span>
+              </p>
+            </div>
+            <div class="slide-detail-facts">
+              <div>
+                <h5>Rate : <span style="opacity: 0.8">7 / 10</span></h5>
+              </div>
+            </div>
+            <div class="slide-img"></div>
+          </div>
+
+          <!-- Slider 3 -->
+          <div class="swiper-slide">
+            <div class="slide-number">
+              <p><span>JavaScript</span></p>
+            </div>
+            <div class="slide-text">
+              <h4><span>03</span></h4>
+            </div>
+            <div class="slide-detail">
+              <p>
+                <span>
+                  Saya cukup mahir dalam menggunakan bahasa pemrograman JS.
+                </span>
+              </p>
+            </div>
+            <div class="slide-detail-facts">
+              <div>
+                <h5>Rate : <span style="opacity: 0.8">7.5 / 10</span></h5>
+              </div>
+            </div>
+            <div class="slide-img"></div>
+          </div>
+
+          <!-- Slider 4 -->
+          <div class="swiper-slide">
+            <div class="slide-number">
+              <p><span>Bootstrap</span></p>
+            </div>
+            <div class="slide-text">
+              <h4><span>04</span></h4>
+            </div>
+            <div class="slide-detail">
+              <p>
+                <span>
+                  Saya cukup mahir dalam menggunakan bahasa pemrograman
+                  Bootstrap.
+                </span>
+              </p>
+            </div>
+            <div class="slide-detail-facts">
+              <div>
+                <h5>Rate : <span style="opacity: 0.8">7 / 10</span></h5>
+              </div>
+            </div>
+            <div class="slide-img"></div>
+          </div>
+
+          <!-- Slider 5 -->
+          <div class="swiper-slide">
+            <div class="slide-number">
+              <p><span>Laravel</span></p>
+            </div>
+            <div class="slide-text">
+              <h4><span>05</span></h4>
+            </div>
+            <div class="slide-detail">
+              <p>
+                <span>
+                  Saya cukup mahir dalam menggunakan bahasa pemrograman Laravel.
+                </span>
+              </p>
+            </div>
+            <div class="slide-detail-facts">
+              <div>
+                <h5>Rate : <span style="opacity: 0.8">8 / 10</span></h5>
+              </div>
+            </div>
+            <div class="slide-img"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLider Links -->
+      <div>
+        <div class="float1">
+          <img src="asset/planets-website-images/mars.png" alt="" />
+        </div>
+        <div class="float2">
+          <img src="asset/planets-website-images/rock.png" alt="" />
+        </div>
+        <div class="bahasa-links"></div>
+      </div>
     </section>
 
-    <!-- service -->
-
-    <section id="services" class="dark">
-        <div class="inner-width">
-            <h1 class="section-title">Services</h1>
-            <div class="services">
-                <div class="service">
-                    <i class="icon fas fa-paint-brush"></i>
-                    <h4>Design</h4>
-                    <p>Menggunakan Adobe Illutrator, Adobe Photoshop</p>
-                </div>
-
-                <div class="service">
-                    <i class="icon fas fa-pager"></i>
-                    <h4>Web Development</h4>
-                    <p>Menggunakan Bahasa Pemrograman HTML, CSS, PHP, JS.</p>
-                </div>
-
-                <div class="service">
-                    <i class="icon fas fa-database"></i>
-                    <h4>Database</h4>
-                    <p>Menggunakan MySQL</p>
-                </div>
-
-                <div class="service">
-                    <i class="icon fab fa-android"></i>
-                    <h4>Android Apps</h4>
-                    <p>PMenggunakan Android Studio Dalam Pembuatan Android Apps</p>
-                </div>
-
-                <div class="service">
-                    <i class="icon fas fa-credit-card"></i>
-                    <h4>UI Design</h4>
-                    <p>Membuat UI Design Yang Menarik</p>
-                </div>
-
-                <div class="service">
-                    <i class="icon fas fa-keyboard"></i>
-                    <h4>Writter</h4>
-                    <p>Writter</p>
-                </div>
-            </div>
+    <!-- Project -->
+    <section id="project" class="screen">
+      <div class="main-project">
+        <p>My Project!</p>
+      </div>
+      <div class="project-container">
+        <div class="project-card">
+          <div class="project-img">
+            <a href="apilasi-absensi"><i class="far fa-eye"></i></a>
+            <img src="asset/planets-website-images/crop4.jpg" alt="" />
+          </div>
+          <div class="project-content">
+            <h2>Aplikasi Absensi</h2>
+          </div>
         </div>
+        <div class="project-card">
+          <div class="project-img">
+            <a href="https://aplikasi-pengaduan.herokuapp.com"
+              ><i class="far fa-eye"></i
+            ></a>
+            <img src="asset/planets-website-images/crop2.jpg" alt="" />
+          </div>
+          <div class="project-content">
+            <h2>Aplikasi Pengaduan</h2>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <a href="#"><i class="far fa-eye"></i></a>
+            <img src="asset/planets-website-images/crop3.jpg" alt="" />
+          </div>
+          <div class="project-content">
+            <h2>Aplikasi Lelang</h2>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Education -->
-    <section id="education">
-        <div class="inner-width">
-            <h1 class="section-title">Education & Experience</h1>
-            <div class="time-line">
-                <div class="block">
-                    <h4>2018 - 2019</h4>
-                    <h3>Software Engineering</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore nostrum repellendus,
-                        sed voluptatibus, perferendis delectus sint sunt velit quasi labore cumque vel eligendi, 
-                        sapiente beatae earum nulla voluptates? Debitis.
-                    </p>
-                </div>
-
-                <div class="block">
-                    <h4>2018 - 2019</h4>
-                    <h3>Software Engineering</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore nostrum repellendus,
-                        sed voluptatibus, perferendis delectus sint sunt velit quasi labore cumque vel eligendi, 
-                        sapiente beatae earum nulla voluptates? Debitis.
-                    </p>
-                </div>
-
-                <div class="block">
-                    <h4>2018 - 2019</h4>
-                    <h3>Software Engineering</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore nostrum repellendus,
-                        sed voluptatibus, perferendis delectus sint sunt velit quasi labore cumque vel eligendi, 
-                        sapiente beatae earum nulla voluptates? Debitis.
-                    </p>
-                </div>
-
-                <div class="block">
-                    <h4>2018 - 2019</h4>
-                    <h3>Software Engineering</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolore nostrum repellendus,
-                        sed voluptatibus, perferendis delectus sint sunt velit quasi labore cumque vel eligendi, 
-                        sapiente beatae earum nulla voluptates? Debitis.
-                    </p>
-                </div>
+    <!-- Contact -->
+    <section id="contact" class="screen">
+      <div class="contact-container">
+        <h1>Stay Connect!</h1>
+        <div class="contact-main">
+          <div class="contact-left">
+            <div class="contact-item">
+              <i class="fas fa-paper-plane"></i>
+              <p>Get In Touch</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Works -->
-
-    <section id="works" class="dark">
-        <div class="inner-width">
-            <h1 class="section-title">Works</h1>
-            <div class="works">
-                <a href="images/works/1.jpg" class="work">
-                    <img src="images/works/1.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
-
-                <a href="images/works/2.jpg" class="work">
-                    <img src="images/works/2.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
-
-                <a href="images/works/3.jpg" class="work">
-                    <img src="images/works/3.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
-
-                <a href="images/works/4.jpg" class="work">
-                    <img src="images/works/4.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
-
-                <a href="images/works/5.jpg" class="work">
-                    <img src="images/works/5.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
-
-                <a href="images/works/6.jpg" class="work">
-                    <img src="images/works/6.jpg" alt="">
-                    <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
-                    </div>
-                </a>
+          </div>
+          <div class="contact-right">
+            <div class="form-group">
+              <input type="text" placeholder="Name" class="name">
+              <input type="text" placeholder="Email" class="email">
             </div>
+            <br>
+            <input type="text" placeholder="Subject" class="subject">
+            <br><br>
+            <textarea cols="5" rows="5" placeholder="Message" class="message"></textarea>
+            <br><br>
+            <input type="submit" value="Send Message">
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
+    <section id="footer" class="screen">
+      <hr />
+      <p>Made with <i class="fas fa-heart"></i> by Ardi.hp</p>
+    </section>
 
-    <footer>
-        <div class="inner-width">
-            <div class="copyright">
-                &copy; 2020 | Created & Designed By <a href="#">Ardiansyah Halim Putra</a>
-            </div>
-            <div class="sm">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-            </div>
-        </div>
-    </footer>
+    <button class="goTop fas fa-arrow-up hide"></button>
 
-    <!-- Go Top Button -->
-
-    <button class="goTop fas fa-arrow-up"></button>
-
-</body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
