@@ -1,0 +1,89 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: white;
+  color: black;
+  font-family: "Righteous", cursive;
+}
+
+nav{
+  position: fixed;
+  z-index: 100;
+  padding: 20px 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color: #067685;
+}
+
+.logo{
+  font-size: 24px;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-transform: uppercase !important;
+}
+
+@media screen and (min-width: 53em) {
+  .slider {
+    height: 100vh;
+  }
+}
+
+.rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.main-slider a {
+  text-decoration: none;
+  position: absolute;
+  top: 46vh;
+  z-index: 1;
+  margin: 20px 40px;
+  transition: 0.3s;
+  color: white;
+}
+
+a i{
+  font-size: 30px;
+}
+
+.main-slider a.next {
+  right: 0;
+}
+
+.main-slider a.prev {
+  left: 0;
+}
+
+@media screen and (max-width: 53em) {
+  .main-slider a {
+    top: auto;
+    bottom: 3rem;
+  }
+}
