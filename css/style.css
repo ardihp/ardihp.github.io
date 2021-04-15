@@ -815,6 +815,13 @@ section {
   border-radius: 10px;
 }
 
+.argon-left .gambar-tambahan{
+  width: 30%;
+  height: 170px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}
+
 /* Argon-right */
 .argon-right{
   width: 30%;
